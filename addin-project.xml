@@ -1,12 +1,12 @@
 <AddinProject appVersion="3.0">
   <Project platforms="Mac Linux">
     <AddinFile>MonoDevelop.WebSharper/bin/Release/MonoDevelop.WebSharper.dll</AddinFile>
-    <BuildFile>tools/Build.Mono.fsproj</BuildFile>
+    <BuildFile>tools/Build.Mono.proj</BuildFile>
     <BuildConfiguration>Release</BuildConfiguration>
   </Project>
   <Project platforms="Win32">
     <AddinFile>MonoDevelop.WebSharper/bin/Release/MonoDevelop.WebSharper.dll</AddinFile>
-    <BuildFile>tools/Build.NET.fsproj</BuildFile>
+    <BuildFile>tools/Build.NET.proj</BuildFile>
     <BuildConfiguration>Release</BuildConfiguration>
   </Project>
 </AddinProject>
