@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Addin id="WebSharper" namespace="MonoDevelop" name="WebSharper" author="IntelliFactory" copyright="Copyright (c) 2008-2014 IntelliFactory" description="Provides WebSharper support for MonoDevelop and Xamarin Studio" category="Web Development" version="2.5.0">
+	<Dependencies>
+		<Addin id="::MonoDevelop.Core" version="4.2" />
+		<Addin id="::MonoDevelop.Ide" version="4.2" />
+	</Dependencies>
+	<Runtime>
+		<Import assembly="IntelliFactory.WebSharper.Templates.dll" />
+		<Import assembly="NuGet.Core.dll" />
+		<Import assembly="MonoDevelop.WebSharper.dll" />
+		<Import assembly="FSharp.Core.dll" />
+	</Runtime>
+	<Extension path="/MonoDevelop/Ide/ProjectTemplates">
+		<ProjectTemplate id="WebSharperBundleWebsiteProject" resource="WebSharperBundleWebsiteProject.xpt.xml" />
+		<ProjectTemplate id="WebSharperExtensionProject" resource="WebSharperExtensionProject.xpt.xml" />
+		<ProjectTemplate id="WebSharperLibraryProject" resource="WebSharperLibraryProject.xpt.xml" />
+		<ProjectTemplate id="WebSharperSiteletsHostProject" resource="WebSharperSiteletsHostProject.xpt.xml" />
+		<ProjectTemplate id="WebSharperSiteletsHtmlProject" resource="WebSharperSiteletsHtmlProject.xpt.xml" />
+		<ProjectTemplate id="WebSharperSiteletsWebsiteProject" resource="WebSharperSiteletsWebsiteProject.xpt.xml" />
+	</Extension>
+	<Extension path="/MonoDevelop/ProjectModel/ProjectBindings">
+		<ProjectBinding id="BundleWebsiteProjectBinding" class="MonoDevelop.WebSharper.BundleWebsiteProjectBinding" />
+		<ProjectBinding id="ExtensionProjectBinding" class="MonoDevelop.WebSharper.ExtensionProjectBinding" />
+		<ProjectBinding id="LibraryProjectBinding" class="MonoDevelop.WebSharper.LibraryProjectBinding" />
+		<ProjectBinding id="SiteletsHostProjectBinding" class="MonoDevelop.WebSharper.SiteletsHostProjectBinding" />
+		<ProjectBinding id="SiteletsHtmlProjectBinding" class="MonoDevelop.WebSharper.SiteletsHtmlProjectBinding" />
+		<ProjectBinding id="SiteletsWebsiteProjectBinding" class="MonoDevelop.WebSharper.SiteletsWebsiteProjectBinding" />
+	</Extension>
+</Addin>

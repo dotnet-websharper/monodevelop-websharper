@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Template Originator="IntelliFactory" Created="4/4/2014" LastModified="4/4/2014">
+	<TemplateConfiguration>
+		<_Name>WebSharper Sitelets Host Website</_Name>
+		<_Description>A C# website configured to host WebSharper sitelets</_Description>
+		<_Category>WebSharper</_Category>
+		<LanguageName>F#</LanguageName>
+	</TemplateConfiguration>
+	<Combine name="${ProjectName}" directory=".">
+		<Options>
+			<StartupProject>${ProjectName}</StartupProject>
+		</Options>
+		<Project name="${ProjectName}" directory="." type="SiteletsHostProjectBinding" />
+	</Combine>
+</Template>
