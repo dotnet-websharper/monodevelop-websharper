@@ -10,4 +10,9 @@
     <MSBuild Projects="../MonoDevelop.WebSharper/MonoDevelop.WebSharper.fsproj"
 	     Properties="Configuration=$(Configuration)"/>
   </Target>
+  <Target Name="Clean">
+    <MSBuild Projects="../MonoDevelop.WebSharper/MonoDevelop.WebSharper.fsproj"
+	     Properties="Configuration=$(Configuration)"
+	     Targets="Clean" />
+  </Target>
 </Project>
