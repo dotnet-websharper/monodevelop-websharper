@@ -4,7 +4,7 @@ NS=MonoDevelop
 N=WebSharper
 VER=2.5.0
 NAME=$(NS).$(N)
-PKG=$(NAME)_$(VER).mpack
+PKG=repository/$(NAME)_$(VER).mpack
 CONF=Release
 DLL=MonoDevelop.WebSharper/bin/$(CONF)/$(NAME).dll
 
@@ -14,6 +14,7 @@ main: $(PKG)
 
 $(PKG): $(DLL)
 	$(MDTOOL) setup pack $(DLL)
+	mv *.mpack repository/
 
 $(DLL): $(NAME) restore
 	$(XBUILD) /p:Configuration=$(CONF)
@@ -34,7 +35,4 @@ packages:
 restore: packages
 
 release: $(PKG)
-	mkdir -p packages
-	cp $(PKG) packages/
-	$(MDTOOL) setup rep-build packages/
-
+	$(MDTOOL) setup rep-build repository/
