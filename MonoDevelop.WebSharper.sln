@@ -4,6 +4,7 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_", "_", "{0E1C1FB5-6112-4FF1-8F61-38312AB517CF}"
 	ProjectSection(SolutionItems) = preProject
 		Makefile = Makefile
+		addin-project.xml = addin-project.xml
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoDevelop.WebSharper", "MonoDevelop.WebSharper\MonoDevelop.WebSharper.csproj", "{36A65E0E-6DFE-4733-B8A1-FC79BD6B0F1E}"
@@ -12,7 +13,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{3F0DCBA2
 	ProjectSection(SolutionItems) = preProject
 		tools\Build.Mono.proj = tools\Build.Mono.proj
 		tools\Build.NET.proj = tools\Build.NET.proj
-		tools\test.fsx = tools\test.fsx
 	EndProjectSection
 EndProject
 Global

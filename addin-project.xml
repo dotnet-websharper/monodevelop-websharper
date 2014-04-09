@@ -1,4 +1,4 @@
-<AddinProject appVersion="3.0">
+<AddinProject appVersion="4.2">
   <Project platforms="Mac Linux">
     <AddinFile>MonoDevelop.WebSharper/bin/Release/MonoDevelop.WebSharper.dll</AddinFile>
     <BuildFile>tools/Build.Mono.proj</BuildFile>
