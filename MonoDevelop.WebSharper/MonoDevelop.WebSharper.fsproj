@@ -34,8 +34,7 @@
   <ItemGroup>
     <Reference Include="mscorlib" />
     <Reference Include="FSharp.Core, Version=4.3.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-      <HintPath>../packages/WebSharper/tools/net40/FSharp.Core.dll</HintPath>
-      <Private>True</Private>      
+      <HintPath>..\packages\WebSharper\tools\net40\FSharp.Core.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,33 +45,15 @@
     </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="ICSharpCode.NRefactory, Version=5.0.0.0, Culture=neutral, PublicKeyToken=d4bfe873e7598c49">
-      <Private>False</Private>
-      <Package>monodevelop</Package>
-    </Reference>
     <Reference Include="IntelliFactory.WebSharper.Templates">
       <HintPath>..\packages\WebSharper\tools\net40\IntelliFactory.WebSharper.Templates.dll</HintPath>
     </Reference>
-    <Reference Include="NuGet.Core">
-      <HintPath>..\packages\WebSharper\tools\net40\NuGet.Core.dll</HintPath>
+    <Reference Include="FsNuGet">
+      <HintPath>..\packages\WebSharper\tools\net40\FsNuGet.dll</HintPath>
     </Reference>
-    <Reference Include="MonoDevelop.Ide, Version=2.6.0.0, Culture=neutral">
+    <Reference Include="ICSharpCode.NRefactory, Version=5.0.0.0, Culture=neutral, PublicKeyToken=d4bfe873e7598c49">
       <Private>False</Private>
       <Package>monodevelop</Package>
-    </Reference>
-    <Reference Include="gtk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="gdk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Mono.Cairo" />
-    <Reference Include="Xwt, Version=0.1.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756">
-      <Private>False</Private>
-      <Package>monodevelop</Package>
-    </Reference>
-    <Reference Include="Mono.Addins, Version=0.6.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756">
-      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -101,6 +82,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="WebSharperSiteletsWebsiteProject.xpt.xml">
       <LogicalName>WebSharperSiteletsWebsiteProject.xpt.xml</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\packages\WebSharper\WebSharper.nupkg">
+      <LogicalName>WebSharper.nupkg</LogicalName>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.1\Framework\v4.0\Microsoft.FSharp.Targets" />
