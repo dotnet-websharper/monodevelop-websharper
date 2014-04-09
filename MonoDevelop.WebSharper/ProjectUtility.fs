@@ -64,7 +64,10 @@ module ProjectUtility =
                 | _ :: lines -> skip lines
                 | [] -> () 
             File.ReadAllLines(path)
-            |> Seq.filter (fun line -> line.Contains("<ProjectTypeGuids>") |> not)
+            |> Seq.filter (fun line ->
+                (line.Contains("<ProjectTypeGuids>")
+                || line.Contains(@"<Import Project=""$(FSharpTargetsPath)"" />"))
+                |> not)
             |> List.ofSeq
             |> fixup
             File.WriteAllLines(path, out, encoding)
