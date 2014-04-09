@@ -5,13 +5,11 @@
     <Configuration Condition=" '$(Configuration)'=='' ">Release</Configuration>
   </PropertyGroup>
   <Target Name="Build">
-    <Exec Command="$(MSBuildThisFileDirectory)NuGet.exe install WebSharper -o packages -excludeVersion"
-	  WorkingDirectory="$(MSBuildThisFileDirectory).." />
-    <MSBuild Projects="../MonoDevelop.WebSharper/MonoDevelop.WebSharper.fsproj"
+    <MSBuild Projects="../MonoDevelop.WebSharper/MonoDevelop.WebSharper.csproj"
 	     Properties="Configuration=$(Configuration)"/>
   </Target>
   <Target Name="Clean">
-    <MSBuild Projects="../MonoDevelop.WebSharper/MonoDevelop.WebSharper.fsproj"
+    <MSBuild Projects="../MonoDevelop.WebSharper/MonoDevelop.WebSharper.csproj"
 	     Properties="Configuration=$(Configuration)"
 	     Targets="Clean" />
   </Target>
