@@ -1,12 +1,7 @@
 <AddinProject appVersion="4.0">
-  <Project platforms="Mac Linux">
-    <AddinFile>MonoDevelop.WebSharper/bin/Release/MonoDevelop.WebSharper.dll</AddinFile>
-    <BuildFile>tools/Build.Mono.proj</BuildFile>
-    <BuildConfiguration>Release</BuildConfiguration>
-  </Project>
-  <Project platforms="Win32">
-    <AddinFile>MonoDevelop.WebSharper/bin/Release/MonoDevelop.WebSharper.dll</AddinFile>
-    <BuildFile>tools/Build.NET.proj</BuildFile>
-    <BuildConfiguration>Release</BuildConfiguration>
+  <Project platforms="Linux Mac Win32">
+    <AddinFile>build/MonoDevelop.WebSharper.dll</AddinFile>
+    <BuildFile>tools/Dummy.proj</BuildFile>
+    <BuildConfiguration>Debug</BuildConfiguration>
   </Project>
 </AddinProject>

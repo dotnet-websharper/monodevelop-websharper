@@ -8,7 +8,7 @@ PKG=$(NAME)_$(VER).mpack
 CONF=Release
 DLL=MonoDevelop.WebSharper/bin/$(CONF)/$(NAME).dll
 
-.PHONY: main restore clean install uninstall
+.PHONY: main restore clean install uninstall release
 
 main: $(PKG)
 
@@ -32,3 +32,7 @@ packages:
 	mono tools/NuGet.exe install WebSharper -o packages -excludeVersion
 
 restore: packages
+
+release: $(DLL)
+	mkdir -p build
+	cp $(DLL) build/
