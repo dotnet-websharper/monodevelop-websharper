@@ -10,7 +10,7 @@ MonoDevelop or XamarinStudio 4.2.2+ with F# language binding installed is requir
 
 Go to Add-in Manager, and manually add a new repository:
 
-    https://raw.githubusercontent.com/intellifactory/monodevelop.websharper/master/repository
+    https://raw.githubusercontent.com/intellifactory/monodevelop.websharper/master/repository/
     
 Upon refreshing, WebSharper should be an installable add-in in the "Web Development" category.
 
