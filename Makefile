@@ -33,6 +33,8 @@ packages:
 
 restore: packages
 
-release: $(DLL)
-	mkdir -p build
-	cp MonoDevelop.WebSharper/bin/$(CONF)/*.dll build/
+release: $(PKG)
+	mkdir -p packages
+	cp $(PKG) packages/
+	$(MDTOOL) setup rep-build packages/
+
