@@ -38,11 +38,11 @@
     <Reference Include="FSharp.Core">
       <HintPath>..\packages\WebSharper\tools\net40\FSharp.Core.dll</HintPath>
     </Reference>
-    <Reference Include="NuGet.Core">
-      <HintPath>..\packages\WebSharper\tools\net40\NuGet.Core.dll</HintPath>
-    </Reference>
     <Reference Include="IntelliFactory.WebSharper.Templates">
       <HintPath>..\packages\WebSharper\tools\net40\IntelliFactory.WebSharper.Templates.dll</HintPath>
+    </Reference>
+    <Reference Include="FsNuGet">
+      <HintPath>..\packages\WebSharper\tools\net40\FsNuGet.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -71,6 +71,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="WebSharperSiteletsWebsiteProject.xpt.xml">
       <LogicalName>WebSharperSiteletsWebsiteProject.xpt.xml</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\packages\WebSharper\WebSharper.nupkg">
+      <LogicalName>WebSharper.nupkg</LogicalName>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

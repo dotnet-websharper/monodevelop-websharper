@@ -6,7 +6,7 @@
 	</Dependencies>
 	<Runtime>
 		<Import assembly="IntelliFactory.WebSharper.Templates.dll" />
-		<Import assembly="NuGet.Core.dll" />
+		<Import assembly="FsNuGet.dll" />
 		<Import assembly="MonoDevelop.WebSharper.dll" />
 		<Import assembly="FSharp.Core.dll" />
 	</Runtime>
