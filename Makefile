@@ -35,4 +35,4 @@ restore: packages
 
 release: $(DLL)
 	mkdir -p build
-	cp $(DLL) build/
+	cp MonoDevelop.WebSharper/bin/$(CONF)/*.dll build/
