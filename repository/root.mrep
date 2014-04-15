@@ -29,4 +29,33 @@
       </Properties>
     </Addin>
   </Addin>
+  <Addin>
+    <Url>MonoDevelop.WebSharper_2.5.1.mpack</Url>
+    <Addin>
+      <Id>WebSharper</Id>
+      <Namespace>MonoDevelop</Namespace>
+      <Name>WebSharper</Name>
+      <Version>2.5.1</Version>
+      <BaseVersion />
+      <Author>IntelliFactory</Author>
+      <Copyright>Copyright (c) 2008-2014 IntelliFactory</Copyright>
+      <Url />
+      <Description>Provides WebSharper support for MonoDevelop and Xamarin Studio</Description>
+      <Category>Web Development</Category>
+      <Dependencies>
+        <AddinDependency>
+          <AddinId>::MonoDevelop.Core</AddinId>
+          <Version>4.2</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>::MonoDevelop.Ide</AddinId>
+          <Version>4.2</Version>
+        </AddinDependency>
+      </Dependencies>
+      <OptionalDependencies />
+      <Properties>
+        <Property name="DownloadSize">3844506</Property>
+      </Properties>
+    </Addin>
+  </Addin>
 </Repository>
