@@ -1,8 +1,8 @@
-MDTOOL=mdtool
+MDTOOL="/Applications/Xamarin Studio.app/Contents/MacOS/mdtool"
 XBUILD=xbuild
 NS=MonoDevelop
 N=WebSharper
-VER=2.5.1
+VER=2.5.2
 NAME=$(NS).$(N)
 PKG=repository/$(NAME)_$(VER).mpack
 CONF=Release
@@ -31,6 +31,7 @@ clean:
 
 packages:
 	mono tools/NuGet.exe install WebSharper -o packages -excludeVersion
+	mono tools/NuGet.exe install sharpcompress -o packages -excludeVersion
 
 restore: packages
 
