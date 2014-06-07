@@ -6,7 +6,7 @@
 
 ## Install
 
-MonoDevelop or XamarinStudio 4.2.2+ with F# language binding installed is required.
+MonoDevelop or XamarinStudio 5.0+.
 
 Go to Add-in Manager, and manually add a new repository:
 
@@ -22,7 +22,7 @@ New Project and New Solution dialogs should have a WebSharper section with vario
 
 ## Build
 
-You need MonoDevelop/XamarinStudio 4.2.2+, Mono 3.2+, and latest F# 3.1. 
+You need MonoDevelop/XamarinStudio 5.0+, Mono 3.4.0+ and latest F#. 
 
 To refresh `repository/` index, do:
 
