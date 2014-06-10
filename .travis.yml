@@ -12,7 +12,10 @@ env:
 
 before_install:
  - wget "http://download.mono-project.com/archive/${MONO_VERSION}/macos-10-x86/MonoFramework-MDK-${MONO_VERSION}.macos10.xamarin.x86.pkg"
+ - wget "http://download.xamarin.com/studio/Mac/XamarinStudio-5.0.0.878-0.dmg"
  - sudo installer -pkg "MonoFramework-MDK-${MONO_VERSION}.macos10.xamarin.x86.pkg" -target /
+ - hdiutil mount XamarinStudio-5.0.0.878-0.dmg
+ - sudo cp -R "/Volumes/Xamarin Studio/Xamarin Studio.app" /Applications
 
 branches:
   only:
