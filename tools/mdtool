@@ -1,4 +1,10 @@
 #!/bin/bash -e
 
-export PATH="/Applications/Xamarin Studio.app/Contents/MacOS/mdtool":$PATH
-mdtool $*
+D="/Applications/Xamarin Studio.app/Contents/MacOS"
+
+if [ -d "$D" ]; then
+    "$D/mdtool" $*
+else
+    mdtool $*
+fi
+
