@@ -1,0 +1,4 @@
+#!/bin/bash -e
+
+export PATH="/Applications/Xamarin Studio.app/Contents/MacOS/mdtool":$PATH
+mdtool $*

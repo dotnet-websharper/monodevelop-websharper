@@ -1,4 +1,4 @@
-MDTOOL="/Applications/Xamarin Studio.app/Contents/MacOS/mdtool"
+MDTOOL=./tools/mdtool
 XBUILD=xbuild
 NS=MonoDevelop
 N=WebSharper
