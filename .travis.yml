@@ -7,15 +7,9 @@ env:
  global:
   - secure: cjqmUEZTt8JMqAXAc46cFwO5owQYZN6qaAiPMehvx+/b9hIaHwXy/j8XMTyDqGoDCLZ+1fKUmdpQJBqn6GSlOwpXMYGnvTZDOl/ugTtQR9Vw93BabI2VdSAxjxC60lwu8SK2ySTye2Dj85ahkOK8fnnprawivsPwyKmbGtygCv4=
   - secure: TvfPS203uDEWIom4SL4vN3sRUpzcATY8RZRdtPO/RzimGygBI42JVK//UB4Vkf9KpR2gFJFxKMVE6EYGKDIcKo+JNHNgyxcwNTEfU+DE9eo/+C5sEix3O7490UdnJ/Ckip9O9DBpI87DTZIo7NxY6t5WtPoW0SVK4wK9frknuq8=
- matrix:
-  - MONO_VERSION="3.4.0"
 
 before_install:
- - wget "http://download.mono-project.com/archive/${MONO_VERSION}/macos-10-x86/MonoFramework-MDK-${MONO_VERSION}.macos10.xamarin.x86.pkg"
- - wget "http://download.xamarin.com/studio/Mac/XamarinStudio-5.0.0.878-0.dmg"
- - sudo installer -pkg "MonoFramework-MDK-${MONO_VERSION}.macos10.xamarin.x86.pkg" -target /
- - hdiutil mount XamarinStudio-5.0.0.878-0.dmg
- - sudo cp -R "/Volumes/Xamarin Studio/Xamarin Studio.app" /Applications
+ - bash tools/beforeInstall.sh
 
 branches:
   only:
