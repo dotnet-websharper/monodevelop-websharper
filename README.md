@@ -12,7 +12,7 @@ MonoDevelop or XamarinStudio 5.0+.
 
 Go to Add-in Manager, and manually add a new repository:
 
-    https://raw.githubusercontent.com/intellifactory/monodevelop.websharper/master/repository/
+    https://raw.githubusercontent.com/intellifactory/monodevelop.websharper/master/repository/main.mrep
     
 Upon refreshing, WebSharper should be an installable add-in in the "Web Development" category.
 
