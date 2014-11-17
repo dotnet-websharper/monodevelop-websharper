@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="IntelliFactory.WebSharper.Templates">
-      <HintPath>..\packages\WebSharper\tools\net40\IntelliFactory.WebSharper.Templates.dll</HintPath>
+      <HintPath>..\packages\WebSharper.Templates\lib\net40\IntelliFactory.WebSharper.Templates.dll</HintPath>
     </Reference>
     <Reference Include="FsNuGet">
       <HintPath>..\packages\WebSharper\tools\net40\FsNuGet.dll</HintPath>
@@ -86,6 +86,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="..\packages\WebSharper\WebSharper.nupkg">
       <LogicalName>WebSharper.nupkg</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\packages\WebSharper.Templates\WebSharper.Templates.nupkg">
+      <LogicalName>WebSharper.Templates.nupkg</LogicalName>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.1\Framework\v4.0\Microsoft.FSharp.Targets" />

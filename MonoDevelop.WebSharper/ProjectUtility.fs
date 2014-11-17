@@ -15,14 +15,15 @@ module T = IntelliFactory.WebSharper.Templates.All
 
 module ProjectUtility =
 
-    let wsPackage () =
-        use s = Assembly.GetExecutingAssembly().GetManifestResourceStream("WebSharper.nupkg")
+    let getPackage ident =
+        use s = Assembly.GetExecutingAssembly().GetManifestResourceStream(ident + ".nupkg")
         T.NuGetPackage.FromStream(s)
 
     let wsSource pkgDir =
         {
             T.NuGetSource.Create() with
-                NuGetPackage = wsPackage ()
+                WebSharperNuGetPackage = getPackage "WebSharper"
+                WebSharperTemplatesNuGetPackage = getPackage "WebSharper.Templates"
                 PackagesDirectory = pkgDir
         }
         |> T.Source.NuGet
