@@ -2,7 +2,7 @@ MDTOOL=./tools/mdtool
 XBUILD=xbuild
 NS=MonoDevelop
 N=WebSharper
-VER=2.5.3
+VER=3.0.36
 NAME=$(NS).$(N)
 PKG=repository/$(NAME)_$(VER).mpack
 CONF=Release
@@ -28,6 +28,7 @@ uninstall:
 clean:
 	$(XBUILD) /p:Configuration=$(CONF) /target:Clean
 	rm -rf $(PKG)
+	rm -rf packages/
 
 packages:
 	mono tools/NuGet.exe install WebSharper -o packages -excludeVersion -prerelease

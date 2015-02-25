@@ -8,5 +8,5 @@ open System.Runtime.CompilerServices
 [<assembly: AssemblyCompany("IntelliFactory")>]
 [<assembly: AssemblyProduct("WebSharper")>]
 [<assembly: AssemblyCopyright("Copyright (c) 2008-2014 IntelliFactory")>]
-[<assembly: AssemblyVersion("2.5.0.0")>]
+[<assembly: AssemblyVersion("3.0.0.0")>]
 do ()
