@@ -24,7 +24,7 @@
 		<ProjectBinding id="BundleWebsiteProjectBinding" class="MonoDevelop.WebSharper.BundleWebsiteProjectBinding" />
 		<ProjectBinding id="ExtensionProjectBinding" class="MonoDevelop.WebSharper.ExtensionProjectBinding" />
 		<ProjectBinding id="LibraryProjectBinding" class="MonoDevelop.WebSharper.LibraryProjectBinding" />
-		<ProjectBinding id="OwinSelfHostBinding" class="MonoDevelop.WebSharper.OwinSelfHostBinding" />
+		<ProjectBinding id="OwinSelfHostProjectBinding" class="MonoDevelop.WebSharper.OwinSelfHostProjectBinding" />
 		<ProjectBinding id="SiteletsHostProjectBinding" class="MonoDevelop.WebSharper.SiteletsHostProjectBinding" />
 		<ProjectBinding id="SiteletsHtmlProjectBinding" class="MonoDevelop.WebSharper.SiteletsHtmlProjectBinding" />
 		<ProjectBinding id="SiteletsWebsiteProjectBinding" class="MonoDevelop.WebSharper.SiteletsWebsiteProjectBinding" />

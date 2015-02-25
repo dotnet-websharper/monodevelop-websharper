@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<Template Originator="IntelliFactory" Created="4/4/2014" LastModified="4/4/2014">
+<Template Originator="IntelliFactory" Created="4/4/2014" LastModified="2/25/2015">
 	<TemplateConfiguration>
 		<_Name>Extension</_Name>
 		<_Description>A WebSharper extension to existing JavaScript code with the WebSharper Interface Generator (WIG) tool</_Description>

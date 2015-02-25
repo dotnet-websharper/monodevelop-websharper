@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<Template Originator="IntelliFactory" Created="4/4/2014" LastModified="4/4/2014">
+<Template Originator="IntelliFactory" Created="4/4/2014" LastModified="2/25/2015">
 	<TemplateConfiguration>
 		<_Name>ASP.NET Container</_Name>
 		<_Description>A C#-based web project configured to host WebSharper sitelets</_Description>
