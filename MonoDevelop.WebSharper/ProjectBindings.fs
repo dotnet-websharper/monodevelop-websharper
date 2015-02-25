@@ -1,7 +1,7 @@
 namespace MonoDevelop.WebSharper
 
 module PU = ProjectUtility
-module T = IntelliFactory.WebSharper.Templates.All
+module T = WebSharper.Templates.All
 
 [<Sealed>]
 type BundleWebsiteProjectBinding() =

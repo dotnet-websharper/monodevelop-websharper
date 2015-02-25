@@ -5,7 +5,7 @@
 		<Addin id="::MonoDevelop.Ide" version="5.0" />
 	</Dependencies>
 	<Runtime>
-		<Import assembly="IntelliFactory.WebSharper.Templates.dll" />
+		<Import assembly="WebSharper.Templates.dll" />
 		<Import assembly="FsNuGet.dll" />
 		<Import assembly="MonoDevelop.WebSharper.dll" />
 		<Import assembly="FSharp.Core.dll" />

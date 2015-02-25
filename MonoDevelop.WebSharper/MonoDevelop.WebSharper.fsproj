@@ -41,8 +41,8 @@
     <Reference Include="System.Numerics" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="IntelliFactory.WebSharper.Templates">
-      <HintPath>..\packages\WebSharper.Templates\lib\net40\IntelliFactory.WebSharper.Templates.dll</HintPath>
+    <Reference Include="WebSharper.Templates">
+      <HintPath>..\packages\WebSharper.Templates\lib\net40\WebSharper.Templates.dll</HintPath>
     </Reference>
     <Reference Include="FsNuGet">
       <HintPath>..\packages\WebSharper\tools\net40\FsNuGet.dll</HintPath>

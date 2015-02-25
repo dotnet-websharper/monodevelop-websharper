@@ -9,7 +9,7 @@ open MonoDevelop
 // open MonoDevelop.Core
 open MonoDevelop.Core.ProgressMonitoring
 open MonoDevelop.Projects
-module T = IntelliFactory.WebSharper.Templates.All
+module T = WebSharper.Templates.All
 
 #nowarn "40"
 
