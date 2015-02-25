@@ -30,7 +30,7 @@ clean:
 	rm -rf $(PKG)
 
 packages:
-	mono tools/NuGet.exe install WebSharper -o packages -excludeVersion
+	mono tools/NuGet.exe install WebSharper -o packages -excludeVersion -prerelease
 	mono tools/NuGet.exe install FsNuget -o packages -excludeVersion
 	mono tools/NuGet.exe install WebSharper.Templates -o packages -excludeVersion -prerelease
 	mono tools/NuGet.exe install sharpcompress -o packages -excludeVersion
