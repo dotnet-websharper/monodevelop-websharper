@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <Template Originator="IntelliFactory" Created="4/4/2014" LastModified="4/4/2014">
 	<TemplateConfiguration>
-		<_Name>WebSharper Extension</_Name>
-		<_Description>An extension for WebSharper describing JavaScript bindings with the InterfaceGenerator tool</_Description>
+		<_Name>Extension</_Name>
+		<_Description>A WebSharper extension to existing JavaScript code with the WebSharper Interface Generator (WIG) tool</_Description>
 		<_Category>WebSharper</_Category>
 		<LanguageName>F#</LanguageName>
 	</TemplateConfiguration>

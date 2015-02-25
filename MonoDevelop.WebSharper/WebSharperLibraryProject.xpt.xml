@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Template Originator="IntelliFactory" Created="4/4/2014" LastModified="4/4/2014">
 	<TemplateConfiguration>
-		<_Name>WebSharper Library</_Name>
+		<_Name>Library</_Name>
 		<_Description>An F# library project compiled to JavaScript with WebSharper</_Description>
 		<_Category>WebSharper</_Category>
 		<LanguageName>F#</LanguageName>

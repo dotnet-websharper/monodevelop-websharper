@@ -15,6 +15,7 @@
 		<ProjectTemplate id="WebSharperBundleWebsiteProject" resource="WebSharperBundleWebsiteProject.xpt.xml" />
 		<ProjectTemplate id="WebSharperExtensionProject" resource="WebSharperExtensionProject.xpt.xml" />
 		<ProjectTemplate id="WebSharperLibraryProject" resource="WebSharperLibraryProject.xpt.xml" />
+		<ProjectTemplate id="WebSharperOwinSelfHostProject" resource="WebSharperOwinSelfHostProject.xpt.xml" />
 		<ProjectTemplate id="WebSharperSiteletsHostProject" resource="WebSharperSiteletsHostProject.xpt.xml" />
 		<ProjectTemplate id="WebSharperSiteletsHtmlProject" resource="WebSharperSiteletsHtmlProject.xpt.xml" />
 		<ProjectTemplate id="WebSharperSiteletsWebsiteProject" resource="WebSharperSiteletsWebsiteProject.xpt.xml" />
@@ -23,6 +24,7 @@
 		<ProjectBinding id="BundleWebsiteProjectBinding" class="MonoDevelop.WebSharper.BundleWebsiteProjectBinding" />
 		<ProjectBinding id="ExtensionProjectBinding" class="MonoDevelop.WebSharper.ExtensionProjectBinding" />
 		<ProjectBinding id="LibraryProjectBinding" class="MonoDevelop.WebSharper.LibraryProjectBinding" />
+		<ProjectBinding id="OwinSelfHostBinding" class="MonoDevelop.WebSharper.OwinSelfHostBinding" />
 		<ProjectBinding id="SiteletsHostProjectBinding" class="MonoDevelop.WebSharper.SiteletsHostProjectBinding" />
 		<ProjectBinding id="SiteletsHtmlProjectBinding" class="MonoDevelop.WebSharper.SiteletsHtmlProjectBinding" />
 		<ProjectBinding id="SiteletsWebsiteProjectBinding" class="MonoDevelop.WebSharper.SiteletsWebsiteProjectBinding" />

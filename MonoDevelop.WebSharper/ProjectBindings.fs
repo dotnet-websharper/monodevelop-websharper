@@ -14,6 +14,10 @@ type ExtensionProjectBinding() =
 [<Sealed>]
 type LibraryProjectBinding() =
     inherit PU.BaseProjectBinding(T.Template.Library)
+
+[<Sealed>]
+type OwinSelfHostProjectBinding() =
+    inherit PU.BaseProjectBinding(T.Template.OwinSelfHost)
    
 [<Sealed>]
 type SiteletsHostProjectBinding() =

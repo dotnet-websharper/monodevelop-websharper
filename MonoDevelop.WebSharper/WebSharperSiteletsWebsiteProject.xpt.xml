@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Template Originator="IntelliFactory" Created="4/4/2014" LastModified="4/4/2014">
 	<TemplateConfiguration>
-		<_Name>WebSharper Sitelets Website</_Name>
+		<_Name>Client-Server Web Application</_Name>
 		<_Description>A website defined in F# (client and server), served with WebSharper sitelets</_Description>
 		<_Category>WebSharper</_Category>
 		<LanguageName>F#</LanguageName>

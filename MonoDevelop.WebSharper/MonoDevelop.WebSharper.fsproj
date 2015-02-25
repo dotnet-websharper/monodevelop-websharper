@@ -31,6 +31,42 @@
     <ConsolePause>false</ConsolePause>
     <Tailcalls>true</Tailcalls>
   </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.1\Framework\v4.0\Microsoft.FSharp.Targets" />
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.fs" />
+    <Compile Include="ProjectUtility.fs" />
+    <Compile Include="ProjectBindings.fs" />
+    <EmbeddedResource Include="MonoDevelop.WebSharper.addin.xml">
+      <LogicalName>MonoDevelop.WebSharper.addin.xml</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebSharperBundleWebsiteProject.xpt.xml">
+      <LogicalName>WebSharperBundleWebsiteProject.xpt.xml</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebSharperExtensionProject.xpt.xml">
+      <LogicalName>WebSharperExtensionProject.xpt.xml</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebSharperLibraryProject.xpt.xml">
+      <LogicalName>WebSharperLibraryProject.xpt.xml</LogicalName>
+    </EmbeddedResource>
+    <Content Include="WebSharperOwinSelfHostProject.xpt.xml" />
+    <EmbeddedResource Include="WebSharperSiteletsHostProject.xpt.xml">
+      <LogicalName>WebSharperSiteletsHostProject.xpt.xml</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebSharperSiteletsHtmlProject.xpt.xml">
+      <LogicalName>WebSharperSiteletsHtmlProject.xpt.xml</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebSharperSiteletsWebsiteProject.xpt.xml">
+      <LogicalName>WebSharperSiteletsWebsiteProject.xpt.xml</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\packages\WebSharper\WebSharper.nupkg">
+      <LogicalName>WebSharper.nupkg</LogicalName>
+      <Link>WebSharper.nupkg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\packages\WebSharper.Templates\WebSharper.Templates.nupkg">
+      <LogicalName>WebSharper.Templates.nupkg</LogicalName>
+      <Link>WebSharper.Templates.nupkg</Link>
+    </EmbeddedResource>
+  </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
     <Reference Include="FSharp.Core, Version=4.3.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -57,39 +93,4 @@
       <HintPath>..\packages\sharpcompress\lib\net40\SharpCompress.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup>
-    <Compile Include="AssemblyInfo.fs" />
-    <Compile Include="ProjectUtility.fs" />
-    <Compile Include="ProjectBindings.fs" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="MonoDevelop.WebSharper.addin.xml">
-      <LogicalName>MonoDevelop.WebSharper.addin.xml</LogicalName>
-    </EmbeddedResource>
-    <EmbeddedResource Include="WebSharperBundleWebsiteProject.xpt.xml">
-      <LogicalName>WebSharperBundleWebsiteProject.xpt.xml</LogicalName>
-    </EmbeddedResource>
-    <EmbeddedResource Include="WebSharperExtensionProject.xpt.xml">
-      <LogicalName>WebSharperExtensionProject.xpt.xml</LogicalName>
-    </EmbeddedResource>
-    <EmbeddedResource Include="WebSharperLibraryProject.xpt.xml">
-      <LogicalName>WebSharperLibraryProject.xpt.xml</LogicalName>
-    </EmbeddedResource>
-    <EmbeddedResource Include="WebSharperSiteletsHostProject.xpt.xml">
-      <LogicalName>WebSharperSiteletsHostProject.xpt.xml</LogicalName>
-    </EmbeddedResource>
-    <EmbeddedResource Include="WebSharperSiteletsHtmlProject.xpt.xml">
-      <LogicalName>WebSharperSiteletsHtmlProject.xpt.xml</LogicalName>
-    </EmbeddedResource>
-    <EmbeddedResource Include="WebSharperSiteletsWebsiteProject.xpt.xml">
-      <LogicalName>WebSharperSiteletsWebsiteProject.xpt.xml</LogicalName>
-    </EmbeddedResource>
-    <EmbeddedResource Include="..\packages\WebSharper\WebSharper.nupkg">
-      <LogicalName>WebSharper.nupkg</LogicalName>
-    </EmbeddedResource>
-    <EmbeddedResource Include="..\packages\WebSharper.Templates\WebSharper.Templates.nupkg">
-      <LogicalName>WebSharper.Templates.nupkg</LogicalName>
-    </EmbeddedResource>
-  </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.1\Framework\v4.0\Microsoft.FSharp.Targets" />
 </Project>
