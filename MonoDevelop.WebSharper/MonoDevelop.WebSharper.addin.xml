@@ -9,7 +9,7 @@
 		<Import assembly="FsNuGet.dll" />
 		<Import assembly="MonoDevelop.WebSharper.dll" />
 		<Import assembly="FSharp.Core.dll" />
-		<Import assembly="sharpcompress.dll" />
+		<Import assembly="SharpCompress.dll" />
 	</Runtime>
 	<Extension path="/MonoDevelop/Ide/ProjectTemplates">
 		<ProjectTemplate id="WebSharperBundleWebsiteProject" resource="WebSharperBundleWebsiteProject.xpt.xml" />
