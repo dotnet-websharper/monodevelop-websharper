@@ -5,6 +5,7 @@ N=WebSharper
 VER=3.0.36.1
 NAME=$(NS).$(N)
 PKG=repository/$(NAME)_$(VER).mpack
+ADDIN_XML=MonoDevelop.WebSharper/$(NAME).addin.xml
 CONF=Release
 DLL=MonoDevelop.WebSharper/bin/$(CONF)/$(NAME).dll
 
@@ -17,6 +18,7 @@ $(PKG): $(DLL)
 	mv *.mpack repository/
 
 $(DLL): $(NAME) restore
+	sed s/PACKAGEVERSION/$(VER)/g $(ADDIN_XML).template > $(ADDIN_XML)
 	$(XBUILD) /p:Configuration=$(CONF)
 
 install: $(PKG)
@@ -28,6 +30,7 @@ uninstall:
 clean:
 	$(XBUILD) /p:Configuration=$(CONF) /target:Clean
 	rm -rf $(PKG)
+	rm -f $(ADDIN_XML)
 
 cleanall: clean
 	rm -rf packages/
