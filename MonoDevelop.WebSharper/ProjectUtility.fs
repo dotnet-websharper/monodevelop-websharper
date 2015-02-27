@@ -37,43 +37,6 @@ module ProjectUtility =
     let noMonitor () =
         new NullProgressMonitor()
  
-    /// this is a hack around the fact that there are F#/Web templates that use
-    /// WebApp GUIDs, but this breaks them in MonoDevelop/XamarinStudio.
-    /// A simple workaround is to remove the ProjectTypeGuid property.
-    /// Also, currently WebSharper F# projects use Choose construct that does not
-    /// seem to work on Mac OS X / Xamarin Studio - this func replaces it with a
-    /// direct F# targets import. 
-    let cleanFsProj path =
-        match Path.GetExtension(path) with
-        | ".fsproj" ->
-            let out = ResizeArray()
-            let (|ChooseStart|_|) (line: string) =
-                if line.ToLower().Trim() = "<choose>" then Some () else None
-            let (|ChooseEnd|_|) (line: string) =
-                if line.ToLower().Trim() = "</choose>" then Some () else None
-            let addFSharpTargets () =
-                let line = @"  <Import Project=""$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.1\Framework\v4.0\Microsoft.FSharp.Targets"" />"
-                out.Add(line)
-            let rec fixup lines =
-                match lines with
-                | ChooseStart :: lines -> skip lines
-                | line :: lines -> out.Add(line); fixup lines
-                | [] -> ()
-            and skip lines =
-                match lines with
-                | ChooseEnd :: lines -> addFSharpTargets (); fixup lines
-                | _ :: lines -> skip lines
-                | [] -> () 
-            File.ReadAllLines(path)
-            |> Seq.filter (fun line ->
-                (line.Contains("<ProjectTypeGuids>")
-                || line.Contains(@"<Import Project=""$(FSharpTargetsPath)"" />"))
-                |> not)
-            |> List.ofSeq
-            |> fixup
-            File.WriteAllLines(path, out, encoding)
-        | _ -> () 
-
     let createProject (Setup (lang, info, opts, template)) =
         let dir = info.ProjectBasePath.FullPath.ToString()
         let pkg = info.SolutionPath.Combine("packages").ToString()
@@ -86,7 +49,6 @@ module ProjectUtility =
             }
         template.Init(cfg)
         let path = Directory.EnumerateFiles(dir, "*.*proj") |> Seq.head
-        cleanFsProj path
         Project.LoadProject(path, noMonitor ()) :?> DotNetProject
  
     [<AbstractClass>]

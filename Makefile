@@ -2,13 +2,13 @@ MDTOOL=./tools/mdtool
 XBUILD=xbuild
 NS=MonoDevelop
 N=WebSharper
-VER=3.0.36
+VER=3.0.36.1
 NAME=$(NS).$(N)
 PKG=repository/$(NAME)_$(VER).mpack
 CONF=Release
 DLL=MonoDevelop.WebSharper/bin/$(CONF)/$(NAME).dll
 
-.PHONY: main restore clean install uninstall release
+.PHONY: main restore clean cleanall install uninstall release
 
 main: $(PKG)
 
@@ -28,13 +28,13 @@ uninstall:
 clean:
 	$(XBUILD) /p:Configuration=$(CONF) /target:Clean
 	rm -rf $(PKG)
+
+cleanall: clean
 	rm -rf packages/
 
 packages:
 	mono tools/NuGet.exe install WebSharper -o packages -excludeVersion -prerelease
-	mono tools/NuGet.exe install FsNuget -o packages -excludeVersion
 	mono tools/NuGet.exe install WebSharper.Templates -o packages -excludeVersion -prerelease
-	mono tools/NuGet.exe install sharpcompress -o packages -excludeVersion
 
 restore: packages
 
