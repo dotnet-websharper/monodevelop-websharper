@@ -14,6 +14,8 @@ DLL=MonoDevelop.WebSharper/bin/$(CONF)/$(NAME).dll
 main: $(PKG)
 
 $(PKG): $(DLL)
+	$(MDTOOL) --help # must be run at least once before doing `mdtool setup ...` \
+	                 # (seemingly an mdtool bug)
 	$(MDTOOL) setup pack $(DLL)
 	mv *.mpack repository/
 
