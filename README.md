@@ -16,15 +16,18 @@ Go to Add-in Manager, and manually add a new repository:
     
 Upon refreshing, WebSharper should be an installable add-in in the "Web Development" category.
 
+Make sure that you have the F# Language Binding add-in installed. It comes bundled with
+Xamarin Studio, but you need to install it in MonoDevelop.
+
 You may need to restart the IDE after installing.
 
 ## Use
 
-New Project and New Solution dialogs should have a WebSharper section with various templates.
+New Project and New Solution dialogs should have a WebSharper section with various [templates](http://websharper.com/docs/templates).
 
 ## Build
 
-You need MonoDevelop/XamarinStudio 5.0+, Mono 3.4.0+ and latest F#. 
+You need MonoDevelop/XamarinStudio 5.0+, Mono 3.4.0+ and latest F#.
 
 To refresh `repository/` index, do:
 
