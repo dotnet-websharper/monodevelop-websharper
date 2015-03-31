@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.org/intellifactory/monodevelop.websharper.svg?branch=master)](https://travis-ci.org/intellifactory/monodevelop.websharper)
-
 # monodevelop.websharper
+
+[![Build Status](https://travis-ci.org/intellifactory/monodevelop.websharper.svg?branch=master)](https://travis-ci.org/intellifactory/monodevelop.websharper)
 
 [WebSharper][ws] add-in for MonoDevelop and XamarinStudio.
 
