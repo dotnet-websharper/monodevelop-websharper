@@ -30,3 +30,7 @@ type SiteletsHtmlProjectBinding() =
 [<Sealed>]
 type SiteletsWebsiteProjectBinding() =
     inherit PU.BaseProjectBinding(T.Template.SiteletsWebsite)
+
+[<Sealed>]
+type BundleUINextProjectBinding() =
+    inherit PU.BaseProjectBinding(T.Template.BundleUINext)

@@ -42,6 +42,9 @@
     <EmbeddedResource Include="WebSharperBundleWebsiteProject.xpt.xml">
       <LogicalName>WebSharperBundleWebsiteProject.xpt.xml</LogicalName>
     </EmbeddedResource>
+    <EmbeddedResource Include="WebSharperBundleUINextProject.xpt.xml">
+      <LogicalName>WebSharperBundleUINextProject.xpt.xml</LogicalName>
+    </EmbeddedResource>
     <EmbeddedResource Include="WebSharperExtensionProject.xpt.xml">
       <LogicalName>WebSharperExtensionProject.xpt.xml</LogicalName>
     </EmbeddedResource>

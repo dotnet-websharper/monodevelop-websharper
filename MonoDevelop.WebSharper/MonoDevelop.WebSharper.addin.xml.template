@@ -13,6 +13,7 @@
 	</Runtime>
 	<Extension path="/MonoDevelop/Ide/ProjectTemplates">
 		<ProjectTemplate id="WebSharperBundleWebsiteProject" resource="WebSharperBundleWebsiteProject.xpt.xml" />
+		<ProjectTemplate id="WebSharperBundleUINextProject" resource="WebSharperBundleUINextProject.xpt.xml" />
 		<ProjectTemplate id="WebSharperExtensionProject" resource="WebSharperExtensionProject.xpt.xml" />
 		<ProjectTemplate id="WebSharperLibraryProject" resource="WebSharperLibraryProject.xpt.xml" />
 		<ProjectTemplate id="WebSharperOwinSelfHostProject" resource="WebSharperOwinSelfHostProject.xpt.xml" />
@@ -22,6 +23,7 @@
 	</Extension>
 	<Extension path="/MonoDevelop/ProjectModel/ProjectBindings">
 		<ProjectBinding id="BundleWebsiteProjectBinding" class="MonoDevelop.WebSharper.BundleWebsiteProjectBinding" />
+		<ProjectBinding id="BundleUINextProjectBinding" class="MonoDevelop.WebSharper.BundleUINextProjectBinding" />
 		<ProjectBinding id="ExtensionProjectBinding" class="MonoDevelop.WebSharper.ExtensionProjectBinding" />
 		<ProjectBinding id="LibraryProjectBinding" class="MonoDevelop.WebSharper.LibraryProjectBinding" />
 		<ProjectBinding id="OwinSelfHostProjectBinding" class="MonoDevelop.WebSharper.OwinSelfHostProjectBinding" />

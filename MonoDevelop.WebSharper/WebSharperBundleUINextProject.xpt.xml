@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Template Originator="IntelliFactory" Created="4/4/2014" LastModified="2/25/2015">
+	<TemplateConfiguration>
+		<_Name>UI.Next Single-Page Application</_Name>
+		<_Description>A single-page UI.Next application</_Description>
+		<_Category>WebSharper</_Category>
+		<LanguageName>F#</LanguageName>
+	</TemplateConfiguration>
+	<Combine name="${ProjectName}" directory=".">
+		<Options>
+			<StartupProject>${ProjectName}</StartupProject>
+		</Options>
+		<Project name="${ProjectName}" directory="." type="BundleUINextProjectBinding" />
+	</Combine>
+</Template>
