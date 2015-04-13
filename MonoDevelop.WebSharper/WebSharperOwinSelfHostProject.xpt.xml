@@ -10,6 +10,11 @@
 		<Options>
 			<StartupProject>${ProjectName}</StartupProject>
 		</Options>
-		<Project name="${ProjectName}" directory="." type="OwinSelfHostProjectBinding" />
+		<Project name="${ProjectName}" directory="." type="OwinSelfHostProjectBinding">
+		  <Packages>
+		    <Package id="WebSharper" />
+		    <Package id="WebSharper.Owin" />
+		  </Packages>
+		</Project>
 	</Combine>
 </Template>

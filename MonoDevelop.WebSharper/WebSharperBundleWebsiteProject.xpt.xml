@@ -10,6 +10,10 @@
 		<Options>
 			<StartupProject>${ProjectName}</StartupProject>
 		</Options>
-		<Project name="${ProjectName}" directory="." type="BundleWebsiteProjectBinding" />
+		<Project name="${ProjectName}" directory="." type="BundleWebsiteProjectBinding">
+		  <Packages>
+		    <Package id="WebSharper" />
+		  </Packages>
+		</Project>
 	</Combine>
 </Template>
