@@ -117,26 +117,6 @@
     </Addin>
   </Addin>
   <Addin>
-    <Url>MonoDevelop.WebSharper_3.0.36.mpack</Url>
-    <Addin>
-      <Id>WebSharper</Id>
-      <Namespace>MonoDevelop</Namespace>
-      <Name>WebSharper</Name>
-      <Version>3.0.36</Version>
-      <BaseVersion />
-      <Author>IntelliFactory</Author>
-      <Copyright>Copyright (c) 2008-2014 IntelliFactory</Copyright>
-      <Url />
-      <Description>Provides WebSharper support for MonoDevelop and Xamarin Studio</Description>
-      <Category>Web Development</Category>
-      <Dependencies />
-      <OptionalDependencies />
-      <Properties>
-        <Property name="DownloadSize">4057054</Property>
-      </Properties>
-    </Addin>
-  </Addin>
-  <Addin>
     <Url>MonoDevelop.WebSharper_3.0.36.1.mpack</Url>
     <Addin>
       <Id>WebSharper</Id>
@@ -153,6 +133,46 @@
       <OptionalDependencies />
       <Properties>
         <Property name="DownloadSize">4056269</Property>
+      </Properties>
+    </Addin>
+  </Addin>
+  <Addin>
+    <Url>MonoDevelop.WebSharper_3.0.36.mpack</Url>
+    <Addin>
+      <Id>WebSharper</Id>
+      <Namespace>MonoDevelop</Namespace>
+      <Name>WebSharper</Name>
+      <Version>3.0.36</Version>
+      <BaseVersion />
+      <Author>IntelliFactory</Author>
+      <Copyright>Copyright (c) 2008-2014 IntelliFactory</Copyright>
+      <Url />
+      <Description>Provides WebSharper support for MonoDevelop and Xamarin Studio</Description>
+      <Category>Web Development</Category>
+      <Dependencies />
+      <OptionalDependencies />
+      <Properties>
+        <Property name="DownloadSize">4057047</Property>
+      </Properties>
+    </Addin>
+  </Addin>
+  <Addin>
+    <Url>MonoDevelop.WebSharper_3.0.54.0.mpack</Url>
+    <Addin>
+      <Id>WebSharper</Id>
+      <Namespace>MonoDevelop</Namespace>
+      <Name>WebSharper</Name>
+      <Version>3.0.54.0</Version>
+      <BaseVersion />
+      <Author>IntelliFactory</Author>
+      <Copyright>Copyright (c) 2008-2014 IntelliFactory</Copyright>
+      <Url />
+      <Description>Provides WebSharper support for MonoDevelop and Xamarin Studio</Description>
+      <Category>Web Development</Category>
+      <Dependencies />
+      <OptionalDependencies />
+      <Properties>
+        <Property name="DownloadSize">4384407</Property>
       </Properties>
     </Addin>
   </Addin>
