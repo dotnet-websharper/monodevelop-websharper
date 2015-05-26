@@ -15,19 +15,6 @@ module T = WebSharper.Templates.All
 
 module ProjectUtility =
 
-    let getPackage ident =
-        use s = Assembly.GetExecutingAssembly().GetManifestResourceStream(ident + ".nupkg")
-        T.NuGetPackage.FromStream(s)
-
-    let wsSource pkgDir =
-        {
-            T.NuGetSource.Create() with
-                WebSharperNuGetPackage = getPackage "WebSharper"
-                WebSharperTemplatesNuGetPackage = getPackage "WebSharper.Templates"
-                PackagesDirectory = pkgDir
-        }
-        |> T.Source.NuGet
-
     type Setup =
         | Setup of lang: string * ProjectCreateInformation * XmlElement * T.Template
 
@@ -40,12 +27,15 @@ module ProjectUtility =
     let createProject (Setup (lang, info, opts, template)) =
         let dir = info.ProjectBasePath.FullPath.ToString()
         let pkg = info.SolutionPath.Combine("packages").ToString()
-        let cfg =
+        let cfg : T.InitOptions =
             {
-                T.InitOptions.Create() with
-                    Directory = dir
-                    ProjectName = info.ProjectName
-                    Source = wsSource pkg
+                Directory = dir
+                ProjectName = info.ProjectName
+                TemplatesPackage =
+                    use s = Assembly.GetExecutingAssembly().GetManifestResourceStream("WebSharper.Templates.nupkg")
+                    use m = new MemoryStream()
+                    s.CopyTo(m)
+                    m.ToArray()
             }
         template.Init(cfg)
         let path = Directory.EnumerateFiles(dir, "*.*proj") |> Seq.head
