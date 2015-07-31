@@ -10,7 +10,7 @@
 		<Options>
 			<StartupProject>${ProjectName}</StartupProject>
 		</Options>
-		<Project name="${ProjectName}" directory="." type="BundleUINextProjectBinding">
+		<Project name="${ProjectName}" directory="." type="SiteletsUINextProjectBinding">
 		  <Packages>
 		    <Package id="WebSharper" />
 		    <Package id="WebSharper.UI.Next" />
