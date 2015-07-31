@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Template Originator="IntelliFactory" Created="2/25/2015" LastModified="2/25/2015">
 	<TemplateConfiguration>
-		<_Name>Self-Hosted Client-Server Web Application</_Name>
+		<_Name>WebSharper Self-Hosted Client-Server Web Application</_Name>
 		<_Description>A website defined in F# (client and server), running as a dedicated executable using an OWIN host</_Description>
 		<_Category>WebSharper</_Category>
 		<LanguageName>F#</LanguageName>

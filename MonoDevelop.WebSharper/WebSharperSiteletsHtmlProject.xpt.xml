@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Template Originator="IntelliFactory" Created="4/4/2014" LastModified="2/25/2015">
 	<TemplateConfiguration>
-		<_Name>HTML Application</_Name>
+		<_Name>WebSharper HTML Application</_Name>
 		<_Description>A static HTML website created with WebSharper Sitelets</_Description>
 		<_Category>WebSharper</_Category>
 		<LanguageName>F#</LanguageName>

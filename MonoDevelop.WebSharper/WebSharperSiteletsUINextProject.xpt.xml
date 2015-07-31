@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<Template Originator="IntelliFactory" Created="4/4/2014" LastModified="2/25/2015">
+<Template Originator="IntelliFactory" Created="7/29/2015" LastModified="7/29/2015">
 	<TemplateConfiguration>
-		<_Name>WebSharper UI.Next Single-Page Application</_Name>
-		<_Description>A single-page UI.Next application</_Description>
+		<_Name>WebSharper Client-Server UI.Next Application</_Name>
+		<_Description>A website defined in F# (client and server), served with WebSharper sitelets and using UI.Next</_Description>
 		<_Category>WebSharper</_Category>
 		<LanguageName>F#</LanguageName>
 	</TemplateConfiguration>

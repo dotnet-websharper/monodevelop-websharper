@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Template Originator="IntelliFactory" Created="4/4/2014" LastModified="2/25/2015">
 	<TemplateConfiguration>
-		<_Name>Single-Page Application</_Name>
+		<_Name>WebSharper Single-Page Application</_Name>
 		<_Description>An empty single-page HTML application</_Description>
 		<_Category>WebSharper</_Category>
 		<LanguageName>F#</LanguageName>

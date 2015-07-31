@@ -51,7 +51,9 @@
     <EmbeddedResource Include="WebSharperLibraryProject.xpt.xml">
       <LogicalName>WebSharperLibraryProject.xpt.xml</LogicalName>
     </EmbeddedResource>
-    <Content Include="WebSharperOwinSelfHostProject.xpt.xml" />
+    <EmbeddedResource Include="WebSharperOwinSelfHostProject.xpt.xml">
+      <LogicalName>WebSharperOwinSelfHostProject.xpt.xml</LogicalName>
+    </EmbeddedResource>
     <EmbeddedResource Include="WebSharperSiteletsHostProject.xpt.xml">
       <LogicalName>WebSharperSiteletsHostProject.xpt.xml</LogicalName>
     </EmbeddedResource>
@@ -60,6 +62,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="WebSharperSiteletsWebsiteProject.xpt.xml">
       <LogicalName>WebSharperSiteletsWebsiteProject.xpt.xml</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebSharperSiteletsUINextProject.xpt.xml">
+      <LogicalName>WebSharperSiteletsUINextProject.xpt.xml</LogicalName>
     </EmbeddedResource>
     <EmbeddedResource Include="..\packages\WebSharper.Templates\WebSharper.Templates.nupkg">
       <LogicalName>WebSharper.Templates.nupkg</LogicalName>
