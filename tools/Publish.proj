@@ -3,6 +3,10 @@
     <Exec Command="NuGet.exe install FSharp.Compiler.Tools -o ../packages -excludeVersion -version 3.1.2.2" />
     <Exec Command="NuGet.exe install WebSharper -o ../packages -excludeVersion -prerelease" />
     <Exec Command="NuGet.exe install WebSharper.Templates -o ../packages -excludeVersion -prerelease" />
-    <MSBuild Projects="../MonoDevelop.WebSharper/MonoDevelop.WebSharper.fsproj" />
+    <MSBuild Projects="../MonoDevelop.WebSharper/MonoDevelop.WebSharper.fsproj" Targets="Build" />
+  </Target>
+  <Target Name="Clean">
+    <MSBuild Projects="../MonoDevelop.WebSharper/MonoDevelop.WebSharper.fsproj" Targets="Clean" />
+    <RemoveDir Directories="../packages" />
   </Target>
 </Project>
