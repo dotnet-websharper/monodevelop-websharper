@@ -1,0 +1,7 @@
+<AddinProject appVersion="5.0">
+	<Project>
+		<AddinFile>MonoDevelop.WebSharper/bin/Release/MonoDevelop.WebSharper.dll</AddinFile>
+		<BuildFile>MonoDevelop.WebSharper.sln</BuildFile>
+		<BuildConfiguration>Release</BuildConfiguration>
+	</Project>
+</AddinProject>
