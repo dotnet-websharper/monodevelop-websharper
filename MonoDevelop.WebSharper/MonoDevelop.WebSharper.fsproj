@@ -31,7 +31,9 @@
     <ConsolePause>false</ConsolePause>
     <Tailcalls>true</Tailcalls>
   </PropertyGroup>
-  <Import Project="..\packages\FSharp.Compiler.Tools\tools\Microsoft.FSharp.Targets" />
+  <Import Project="..\packages\FSharp.Compiler.Tools\tools\Microsoft.FSharp.Targets" Condition="Exists('..\packages\FSharp.Compiler.Tools\tools\Microsoft.FSharp.Targets')" />
+  <Target Name="Clean" Condition="!Exists('..\packages\FSharp.Compiler.Tools\tools\Microsoft.FSharp.Targets')"></Target>
+  <Target Name="Build" Condition="!Exists('..\packages\FSharp.Compiler.Tools\tools\Microsoft.FSharp.Targets')"></Target>
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
     <Compile Include="ProjectUtility.fs" />
