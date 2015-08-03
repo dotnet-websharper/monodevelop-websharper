@@ -74,6 +74,14 @@
       <LogicalName>WebSharper.Templates.nupkg</LogicalName>
       <Link>WebSharper.Templates.nupkg</Link>
     </EmbeddedResource>
+    <None Include="..\packages\FSharp.Compiler.Tools\tools\FSharp.Core.sigdata">
+      <Link>FSharp.Core.sigdata</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\packages\FSharp.Compiler.Tools\tools\FSharp.Core.optdata">
+      <Link>FSharp.Core.optdata</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
