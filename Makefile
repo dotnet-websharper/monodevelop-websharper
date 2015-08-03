@@ -40,6 +40,7 @@ cleanall: clean
 	rm -rf packages/
 
 packages:
+	mono tools/NuGet.exe install FSharp.Compiler.Tools -o packages -excludeVersion -version 3.1.2.2
 	mono tools/NuGet.exe install WebSharper -o packages -excludeVersion -prerelease
 	mono tools/NuGet.exe install WebSharper.Templates -o packages -excludeVersion -prerelease
 

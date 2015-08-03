@@ -1,0 +1,8 @@
+﻿<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <Target Name="Build">
+    <Exec Command="NuGet.exe install FSharp.Compiler.Tools -o ../packages -excludeVersion -version 3.1.2.2" />
+    <Exec Command="NuGet.exe install WebSharper -o ../packages -excludeVersion -prerelease" />
+    <Exec Command="NuGet.exe install WebSharper.Templates -o ../packages -excludeVersion -prerelease" />
+    <MSBuild Projects="../MonoDevelop.WebSharper/MonoDevelop.WebSharper.fsproj" />
+  </Target>
+</Project>
