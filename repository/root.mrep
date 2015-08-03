@@ -276,4 +276,24 @@
       </Properties>
     </Addin>
   </Addin>
+  <Addin>
+    <Url>MonoDevelop.WebSharper_3.4.8.2.mpack</Url>
+    <Addin>
+      <Id>WebSharper</Id>
+      <Namespace>MonoDevelop</Namespace>
+      <Name>WebSharper</Name>
+      <Version>3.4.8.2</Version>
+      <BaseVersion />
+      <Author>IntelliFactory</Author>
+      <Copyright>Copyright (c) 2008-2014 IntelliFactory</Copyright>
+      <Url />
+      <Description>Provides WebSharper support for MonoDevelop and Xamarin Studio</Description>
+      <Category>Web Development</Category>
+      <Dependencies />
+      <OptionalDependencies />
+      <Properties>
+        <Property name="DownloadSize">871600</Property>
+      </Properties>
+    </Addin>
+  </Addin>
 </Repository>
