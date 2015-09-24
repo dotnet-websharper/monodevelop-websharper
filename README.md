@@ -4,22 +4,15 @@
 
 [WebSharper][ws] add-in for MonoDevelop and XamarinStudio.
 
-*Status*: available for testing.
-
 ## Install
 
-MonoDevelop or XamarinStudio 5.0+.
+On MonoDevelop or XamarinStudio 5.0+:
 
-Go to Add-in Manager, and manually add a new repository:
+* Go to **Tools** > **Add-in Manager**.
+* Under the **Gallery** tab, open the **Web Development** category.
+* Select **WebSharper**, and on the right panel click the **Install...** button.
 
-    https://raw.githubusercontent.com/intellifactory/monodevelop.websharper/master/repository/
-    
-Upon refreshing, WebSharper should be an installable add-in in the "Web Development" category.
-
-Make sure that you have the F# Language Binding add-in installed. It comes bundled with
-Xamarin Studio, but you need to install it in MonoDevelop.
-
-You may need to restart the IDE after installing.
+Make sure that you have the F# Language Binding add-in installed. It comes bundled with Xamarin Studio, but you need to install it in MonoDevelop (from the **Language bindings** category in the Add-in Manager).
 
 ## Use
 
