@@ -27,16 +27,17 @@ module ProjectUtility =
     let createProject (Setup (lang, info, opts, template)) =
         let dir = info.ProjectBasePath.FullPath.ToString()
         let pkg = info.SolutionPath.Combine("packages").ToString()
-        let cfg : T.InitOptions =
-            {
-                Directory = dir
-                ProjectName = info.ProjectName
-                TemplatesPackage =
+        let cfg =
+            T.InitOptions.Create(
+                directory = dir,
+                projectName = info.ProjectName,
+                templatesPackage = (
                     use s = Assembly.GetExecutingAssembly().GetManifestResourceStream("WebSharper.Templates.nupkg")
                     use m = new MemoryStream()
                     s.CopyTo(m)
                     m.ToArray()
-            }
+                )
+            )
         template.Init(cfg)
         let path = Directory.EnumerateFiles(dir, "*.*proj") |> Seq.head
         Project.LoadProject(path, noMonitor ()) :?> DotNetProject
