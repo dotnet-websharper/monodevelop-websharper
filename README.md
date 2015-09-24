@@ -12,7 +12,7 @@ On MonoDevelop or XamarinStudio 5.0+:
 * Under the **Gallery** tab, open the **Web Development** category.
 * Select **WebSharper**, and on the right panel click the **Install...** button.
 
-Make sure that you have the F# Language Binding add-in installed. It comes bundled with Xamarin Studio, but you need to install it in MonoDevelop (from the **Language bindings** category in the Add-in Manager).
+Make sure that you have the **F# Language Binding** add-in installed. It comes bundled with Xamarin Studio, but you need to install it in MonoDevelop (from the **Language bindings** category in the Add-in Manager).
 
 ## Use
 
