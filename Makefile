@@ -4,7 +4,7 @@ NS=MonoDevelop
 N=WebSharper
 # Version: First 3 numbers are the current WebSharper version,
 # last digit is a revision number for the addin itself.
-VER=3.4.19.0
+VER=3.5.3.0
 NAME=$(NS).$(N)
 PKG=repository/$(NAME)_$(VER).mpack
 ADDIN_XML=MonoDevelop.WebSharper/$(NAME).addin.xml

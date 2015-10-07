@@ -13,6 +13,7 @@
 		<Project name="${ProjectName}" directory="." type="OwinSelfHostProjectBinding">
 		  <Packages>
 		    <Package id="WebSharper" />
+		    <Package id="WebSharper.Html" />
 		    <Package id="WebSharper.Owin" />
 		  </Packages>
 		</Project>

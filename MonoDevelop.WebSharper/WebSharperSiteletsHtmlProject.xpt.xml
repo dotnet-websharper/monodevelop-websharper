@@ -13,6 +13,7 @@
 		<Project name="${ProjectName}" directory="." type="SiteletsHtmlProjectBinding">
 		  <Packages>
 		    <Package id="WebSharper" />
+		    <Package id="WebSharper.Html" />
 		  </Packages>
 		</Project>
 	</Combine>
