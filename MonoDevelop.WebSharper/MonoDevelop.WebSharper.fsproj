@@ -68,6 +68,9 @@
     <EmbeddedResource Include="WebSharperSiteletsUINextProject.xpt.xml">
       <LogicalName>WebSharperSiteletsUINextProject.xpt.xml</LogicalName>
     </EmbeddedResource>
+    <EmbeddedResource Include="WebSharperSiteletsUINextSuaveProject.xpt.xml">
+      <LogicalName>WebSharperSiteletsUINextSuaveProject.xpt.xml</LogicalName>
+    </EmbeddedResource>
     <EmbeddedResource Include="..\packages\WebSharper.Templates\WebSharper.Templates.nupkg">
       <LogicalName>WebSharper.Templates.nupkg</LogicalName>
       <Link>WebSharper.Templates.nupkg</Link>

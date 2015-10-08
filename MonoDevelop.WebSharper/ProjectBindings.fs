@@ -38,3 +38,7 @@ type BundleUINextProjectBinding() =
 [<Sealed>]
 type SiteletsUINextProjectBinding() =
     inherit PU.BaseProjectBinding(T.Template.SiteletsUINext)
+
+[<Sealed>]
+type SiteletsUINextSuaveProjectBinding() =
+    inherit PU.BaseProjectBinding(T.Template.SiteletsUINextSuave)

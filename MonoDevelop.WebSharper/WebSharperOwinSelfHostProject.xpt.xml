@@ -12,6 +12,10 @@
 		</Options>
 		<Project name="${ProjectName}" directory="." type="OwinSelfHostProjectBinding">
 		  <Packages>
+		    <Package id="Microsoft.Owin.Hosting" />
+		    <Package id="Microsoft.Owin.Host.HttpListener" />
+		    <Package id="Microsoft.Owin.StaticFiles" />
+		    <Package id="Mono.Cecil" />
 		    <Package id="WebSharper" />
 		    <Package id="WebSharper.Html" />
 		    <Package id="WebSharper.Owin" />

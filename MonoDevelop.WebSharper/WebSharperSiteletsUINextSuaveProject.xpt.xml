@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Template Originator="IntelliFactory" Created="7/29/2015" LastModified="7/29/2015">
+	<TemplateConfiguration>
+		<_Name>WebSharper Client-Server UI.Next Application with Suave</_Name>
+		<_Description>A website defined in F# (client and server), served with WebSharper sitelets, using UI.Next and running on Suave</_Description>
+		<_Category>WebSharper</_Category>
+		<LanguageName>F#</LanguageName>
+	</TemplateConfiguration>
+	<Combine name="${ProjectName}" directory=".">
+		<Options>
+			<StartupProject>${ProjectName}</StartupProject>
+		</Options>
+		<Project name="${ProjectName}" directory="." type="SiteletsUINextSuaveProjectBinding">
+		  <Packages>
+		    <Package id="Mono.Cecil" />
+		    <Package id="WebSharper" />
+		    <Package id="WebSharper.UI.Next" />
+		    <Package id="Suave" version="0.32.0-owin2" />
+		    <Package id="WebSharper.Suave" version="3.5.1.13-pre" />
+		  </Packages>
+		</Project>
+	</Combine>
+</Template>
