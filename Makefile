@@ -4,7 +4,7 @@ NS=MonoDevelop
 N=WebSharper
 # Version: First 3 numbers are the current WebSharper version,
 # last digit is a revision number for the addin itself.
-VER=3.5.9.0
+VER=3.5.14.0
 NAME=$(NS).$(N)
 PKG=repository/$(NAME)_$(VER).mpack
 ADDIN_XML=MonoDevelop.WebSharper/$(NAME).addin.xml
@@ -41,7 +41,6 @@ cleanall: clean
 
 packages:
 	mono tools/NuGet.exe install FSharp.Compiler.Tools -o packages -excludeVersion -version 3.1.2.2
-	mono tools/NuGet.exe install WebSharper -o packages -excludeVersion -prerelease
 	mono tools/NuGet.exe install WebSharper.Templates -o packages -excludeVersion -prerelease
 
 restore: packages

@@ -1,12 +1,11 @@
 <?xml version="1.0"?>
-<Addin id="WebSharper" namespace="MonoDevelop" name="WebSharper" author="IntelliFactory" copyright="Copyright (c) 2008-2014 IntelliFactory" description="Provides WebSharper support for MonoDevelop and Xamarin Studio" category="Web Development" version="3.5.9.0">
+<Addin id="WebSharper" namespace="MonoDevelop" name="WebSharper" author="IntelliFactory" copyright="Copyright (c) 2008-2014 IntelliFactory" description="Provides WebSharper support for MonoDevelop and Xamarin Studio" category="Web Development" version="3.5.14.0">
 	<Dependencies>
 		<Addin id="::MonoDevelop.Core" version="5.0" />
 		<Addin id="::MonoDevelop.Ide" version="5.0" />
 	</Dependencies>
 	<Runtime>
 		<Import assembly="WebSharper.Templates.dll" />
-		<Import assembly="FsNuGet.dll" />
 		<Import assembly="MonoDevelop.WebSharper.dll" />
 		<Import assembly="FSharp.Core.dll" />
 		<Import assembly="SharpCompress.dll" />

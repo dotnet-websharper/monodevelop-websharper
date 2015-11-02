@@ -98,9 +98,6 @@
     <Reference Include="WebSharper.Templates">
       <HintPath>..\packages\WebSharper.Templates\lib\net40\WebSharper.Templates.dll</HintPath>
     </Reference>
-    <Reference Include="FsNuGet">
-      <HintPath>..\packages\FsNuGet\lib\net40\FsNuGet.dll</HintPath>
-    </Reference>
     <Reference Include="MonoDevelop.Core">
       <HintPath>..\libs\MonoDevelop.Core.dll</HintPath>
     </Reference>

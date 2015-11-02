@@ -6,7 +6,6 @@
 	</Dependencies>
 	<Runtime>
 		<Import assembly="WebSharper.Templates.dll" />
-		<Import assembly="FsNuGet.dll" />
 		<Import assembly="MonoDevelop.WebSharper.dll" />
 		<Import assembly="FSharp.Core.dll" />
 		<Import assembly="SharpCompress.dll" />
