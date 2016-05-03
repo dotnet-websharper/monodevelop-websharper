@@ -13,6 +13,7 @@
 		<Project name="${ProjectName}" directory="." type="SiteletsUINextProjectBinding">
 		  <Packages>
 		    <Package id="Zafir" />
+        <Package id="Zafir.FSharp" />
 		    <Package id="Zafir.UI.Next" />
 		  </Packages>
 		</Project>

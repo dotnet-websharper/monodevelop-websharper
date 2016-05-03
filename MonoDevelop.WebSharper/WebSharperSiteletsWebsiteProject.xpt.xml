@@ -13,7 +13,8 @@
 		<Project name="${ProjectName}" directory="." type="SiteletsWebsiteProjectBinding">
 		  <Packages>
 		    <Package id="Zafir" />
-		    <Package id="Zafir.Html" />
+        <Package id="Zafir.FSharp" />
+        <Package id="Zafir.Html" />
 		  </Packages>
 		</Project>
 	</Combine>

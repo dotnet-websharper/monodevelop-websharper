@@ -14,7 +14,8 @@
 		  <Packages>
 		    <Package id="Mono.Cecil" />
 		    <Package id="Zafir" />
-		    <Package id="Zafir.UI.Next" />
+        <Package id="Zafir.FSharp" />
+        <Package id="Zafir.UI.Next" />
 		    <Package id="Suave" version="0.32.0-owin2" />
 		    <Package id="Zafir.Suave" />
 		  </Packages>

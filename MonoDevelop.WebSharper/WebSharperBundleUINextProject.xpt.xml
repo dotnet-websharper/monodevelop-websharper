@@ -13,7 +13,8 @@
 		<Project name="${ProjectName}" directory="." type="BundleUINextProjectBinding">
 		  <Packages>
 		    <Package id="Zafir" />
-		    <Package id="Zafir.UI.Next" />
+        <Package id="Zafir.FSharp" />
+        <Package id="Zafir.UI.Next" />
 		  </Packages>
 		</Project>
 	</Combine>

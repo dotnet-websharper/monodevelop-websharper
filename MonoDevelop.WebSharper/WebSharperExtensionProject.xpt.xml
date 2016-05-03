@@ -13,7 +13,8 @@
 		<Project name="${ProjectName}" directory="." type="ExtensionProjectBinding">
 		  <Packages>
 		    <Package id="Zafir" />
-		  </Packages>
+        <Package id="Zafir.FSharp" />
+      </Packages>
 		</Project>
 	</Combine>
 </Template>
