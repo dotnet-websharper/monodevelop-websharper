@@ -3,7 +3,7 @@
 	<TemplateConfiguration>
 		<_Name>WebSharper Library</_Name>
 		<_Description>An F# library project compiled to JavaScript with WebSharper</_Description>
-		<_Category>WebSharper</_Category>
+		<_Category>Zafir</_Category>
 		<LanguageName>F#</LanguageName>
 	</TemplateConfiguration>
 	<Combine name="${ProjectName}" directory=".">
@@ -12,7 +12,7 @@
 		</Options>
 		<Project name="${ProjectName}" directory="." type="LibraryProjectBinding">
 		  <Packages>
-		    <Package id="WebSharper" />
+		    <Package id="Zafir" />
 		  </Packages>
 		</Project>
 	</Combine>

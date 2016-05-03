@@ -3,7 +3,7 @@
 	<TemplateConfiguration>
 		<_Name>WebSharper UI.Next Single-Page Application</_Name>
 		<_Description>A single-page UI.Next application</_Description>
-		<_Category>WebSharper</_Category>
+		<_Category>Zafir</_Category>
 		<LanguageName>F#</LanguageName>
 	</TemplateConfiguration>
 	<Combine name="${ProjectName}" directory=".">
@@ -12,8 +12,8 @@
 		</Options>
 		<Project name="${ProjectName}" directory="." type="BundleUINextProjectBinding">
 		  <Packages>
-		    <Package id="WebSharper" />
-		    <Package id="WebSharper.UI.Next" />
+		    <Package id="Zafir" />
+		    <Package id="Zafir.UI.Next" />
 		  </Packages>
 		</Project>
 	</Combine>

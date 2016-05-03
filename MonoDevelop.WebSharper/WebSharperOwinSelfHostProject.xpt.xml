@@ -3,7 +3,7 @@
 	<TemplateConfiguration>
 		<_Name>WebSharper Self-Hosted Client-Server Web Application</_Name>
 		<_Description>A website defined in F# (client and server), running as a dedicated executable using an OWIN host</_Description>
-		<_Category>WebSharper</_Category>
+		<_Category>Zafir</_Category>
 		<LanguageName>F#</LanguageName>
 	</TemplateConfiguration>
 	<Combine name="${ProjectName}" directory=".">
@@ -16,9 +16,9 @@
 		    <Package id="Microsoft.Owin.Host.HttpListener" />
 		    <Package id="Microsoft.Owin.StaticFiles" />
 		    <Package id="Mono.Cecil" />
-		    <Package id="WebSharper" />
-		    <Package id="WebSharper.Html" />
-		    <Package id="WebSharper.Owin" />
+		    <Package id="Zafir" />
+		    <Package id="Zafir.Html" />
+		    <Package id="Zafir.Owin" />
 		  </Packages>
 		</Project>
 	</Combine>

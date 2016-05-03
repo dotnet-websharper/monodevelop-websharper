@@ -32,7 +32,7 @@ module ProjectUtility =
                 directory = dir,
                 projectName = info.ProjectName,
                 templatesPackage = (
-                    use s = Assembly.GetExecutingAssembly().GetManifestResourceStream("WebSharper.Templates.nupkg")
+                    use s = Assembly.GetExecutingAssembly().GetManifestResourceStream("Zafir.Templates.nupkg")
                     use m = new MemoryStream()
                     s.CopyTo(m)
                     m.ToArray()
