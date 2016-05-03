@@ -1,19 +1,20 @@
 <?xml version="1.0"?>
 <Template Originator="IntelliFactory" Created="4/4/2014" LastModified="2/25/2015">
 	<TemplateConfiguration>
-		<_Name>WebSharper HTML Application</_Name>
-		<_Description>A static HTML website created with WebSharper Sitelets</_Description>
+		<_Name>WebSharper UI.Next Single-Page Application</_Name>
+		<_Description>A single-page UI.Next application</_Description>
 		<_Category>Zafir</_Category>
-		<LanguageName>F#</LanguageName>
+		<LanguageName>C#</LanguageName>
 	</TemplateConfiguration>
 	<Combine name="${ProjectName}" directory=".">
 		<Options>
 			<StartupProject>${ProjectName}</StartupProject>
 		</Options>
-		<Project name="${ProjectName}" directory="." type="SiteletsHtmlProjectBinding">
+		<Project name="${ProjectName}" directory="." type="CSharpBundleUINextProjectBinding">
 		  <Packages>
 		    <Package id="Zafir" />
-		    <Package id="Zafir.Html" />
+        <Package id="Zafir.CSharp" />
+        <Package id="Zafir.UI.Next" />
 		  </Packages>
 		</Project>
 	</Combine>

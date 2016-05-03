@@ -2,18 +2,19 @@
 <Template Originator="IntelliFactory" Created="7/29/2015" LastModified="7/29/2015">
 	<TemplateConfiguration>
 		<_Name>WebSharper Client-Server UI.Next Application</_Name>
-		<_Description>A website defined in F# (client and server), served with WebSharper sitelets and using UI.Next</_Description>
+		<_Description>A website defined in C# (client and server), served with WebSharper sitelets and using UI.Next</_Description>
 		<_Category>Zafir</_Category>
-		<LanguageName>F#</LanguageName>
+		<LanguageName>C#</LanguageName>
 	</TemplateConfiguration>
 	<Combine name="${ProjectName}" directory=".">
 		<Options>
 			<StartupProject>${ProjectName}</StartupProject>
 		</Options>
-		<Project name="${ProjectName}" directory="." type="SiteletsUINextProjectBinding">
+		<Project name="${ProjectName}" directory="." type="CSharpSiteletsUINextProjectBinding">
 		  <Packages>
 		    <Package id="Zafir" />
-		    <Package id="Zafir.UI.Next" />
+        <Package id="Zafir.CSharp" />
+        <Package id="Zafir.UI.Next" />
 		  </Packages>
 		</Project>
 	</Combine>

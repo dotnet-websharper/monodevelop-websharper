@@ -2,18 +2,19 @@
 <Template Originator="IntelliFactory" Created="4/4/2014" LastModified="2/25/2015">
 	<TemplateConfiguration>
 		<_Name>WebSharper Library</_Name>
-		<_Description>An F# library project compiled to JavaScript with WebSharper</_Description>
+		<_Description>A C# library project compiled to JavaScript with WebSharper</_Description>
 		<_Category>Zafir</_Category>
-		<LanguageName>F#</LanguageName>
+		<LanguageName>C#</LanguageName>
 	</TemplateConfiguration>
 	<Combine name="${ProjectName}" directory=".">
 		<Options>
 			<StartupProject>${ProjectName}</StartupProject>
 		</Options>
-		<Project name="${ProjectName}" directory="." type="LibraryProjectBinding">
+		<Project name="${ProjectName}" directory="." type="CSharpLibraryProjectBinding">
 		  <Packages>
 		    <Package id="Zafir" />
-		  </Packages>
+        <Package id="Zafir.CSharp" />
+      </Packages>
 		</Project>
 	</Combine>
 </Template>

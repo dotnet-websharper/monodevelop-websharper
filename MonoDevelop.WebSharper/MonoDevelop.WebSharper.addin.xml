@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<Addin id="Zafir.FSharp" namespace="MonoDevelop" name="WebSharper 4 for F# (Zafir)" author="IntelliFactory" copyright="Copyright (c) 2008-2016 IntelliFactory" description="Provides WebSharper 4 (Zafir) support for MonoDevelop and Xamarin Studio" category="Web Development" version="4.0.55.0-alpha">
+<Addin id="Zafir.CSharp" namespace="MonoDevelop" name="WebSharper 4 for C# (Zafir)" author="IntelliFactory" copyright="Copyright (c) 2008-2016 IntelliFactory" description="Provides WebSharper 4 (Zafir) support for MonoDevelop and Xamarin Studio" category="Web Development" version="4.0.55.0-alpha">
 	<Dependencies>
 		<Addin id="::MonoDevelop.Core" version="5.0" />
 		<Addin id="::MonoDevelop.Ide" version="5.0" />
@@ -11,27 +11,15 @@
 		<Import assembly="SharpCompress.dll" />
 	</Runtime>
 	<Extension path="/MonoDevelop/Ide/ProjectTemplates">
-		<ProjectTemplate id="WebSharperSiteletsWebsiteProject" resource="WebSharperSiteletsWebsiteProject.xpt.xml" />
-		<ProjectTemplate id="WebSharperOwinSelfHostProject" resource="WebSharperOwinSelfHostProject.xpt.xml" />
-		<ProjectTemplate id="WebSharperSiteletsUINextProject" resource="WebSharperSiteletsUINextProject.xpt.xml" />
-		<ProjectTemplate id="WebSharperSiteletsUINextSuaveProject" resource="WebSharperSiteletsUINextSuaveProject.xpt.xml" />
-		<ProjectTemplate id="WebSharperBundleWebsiteProject" resource="WebSharperBundleWebsiteProject.xpt.xml" />
-		<ProjectTemplate id="WebSharperBundleUINextProject" resource="WebSharperBundleUINextProject.xpt.xml" />
-		<ProjectTemplate id="WebSharperExtensionProject" resource="WebSharperExtensionProject.xpt.xml" />
-		<ProjectTemplate id="WebSharperLibraryProject" resource="WebSharperLibraryProject.xpt.xml" />
-		<ProjectTemplate id="WebSharperSiteletsHostProject" resource="WebSharperSiteletsHostProject.xpt.xml" />
-		<ProjectTemplate id="WebSharperSiteletsHtmlProject" resource="WebSharperSiteletsHtmlProject.xpt.xml" />
+		<ProjectTemplate id="WebSharperCSharpSiteletsUINextProject" resource="WebSharperCSharpSiteletsUINextProject.xpt.xml" />
+		<ProjectTemplate id="WebSharperCSharpBundleWebsiteProject" resource="WebSharperCSharpBundleWebsiteProject.xpt.xml" />
+		<ProjectTemplate id="WebSharperCSharpBundleUINextProject" resource="WebSharperCSharpBundleUINextProject.xpt.xml" />
+		<ProjectTemplate id="WebSharperCSharpLibraryProject" resource="WebSharperCSharpLibraryProject.xpt.xml" />
 	</Extension>
 	<Extension path="/MonoDevelop/ProjectModel/ProjectBindings">
-		<ProjectBinding id="SiteletsWebsiteProjectBinding" class="MonoDevelop.WebSharper.SiteletsWebsiteProjectBinding" />
-		<ProjectBinding id="OwinSelfHostProjectBinding" class="MonoDevelop.WebSharper.OwinSelfHostProjectBinding" />
-		<ProjectBinding id="SiteletsUINextProjectBinding" class="MonoDevelop.WebSharper.SiteletsUINextProjectBinding" />
-		<ProjectBinding id="SiteletsUINextSuaveProjectBinding" class="MonoDevelop.WebSharper.SiteletsUINextSuaveProjectBinding" />
-		<ProjectBinding id="BundleWebsiteProjectBinding" class="MonoDevelop.WebSharper.BundleWebsiteProjectBinding" />
-		<ProjectBinding id="BundleUINextProjectBinding" class="MonoDevelop.WebSharper.BundleUINextProjectBinding" />
-		<ProjectBinding id="ExtensionProjectBinding" class="MonoDevelop.WebSharper.ExtensionProjectBinding" />
-		<ProjectBinding id="LibraryProjectBinding" class="MonoDevelop.WebSharper.LibraryProjectBinding" />
-		<ProjectBinding id="SiteletsHostProjectBinding" class="MonoDevelop.WebSharper.SiteletsHostProjectBinding" />
-		<ProjectBinding id="SiteletsHtmlProjectBinding" class="MonoDevelop.WebSharper.SiteletsHtmlProjectBinding" />
+		<ProjectBinding id="CSharpSiteletsUINextProjectBinding" class="MonoDevelop.WebSharper.CSharpSiteletsUINextProjectBinding" />
+		<ProjectBinding id="CSharpBundleWebsiteProjectBinding" class="MonoDevelop.WebSharper.CSharpBundleWebsiteProjectBinding" />
+		<ProjectBinding id="CSharpBundleUINextProjectBinding" class="MonoDevelop.WebSharper.CSharpBundleUINextProjectBinding" />
+		<ProjectBinding id="CSharpLibraryProjectBinding" class="MonoDevelop.WebSharper.CSharpLibraryProjectBinding" />
 	</Extension>
 </Addin>
