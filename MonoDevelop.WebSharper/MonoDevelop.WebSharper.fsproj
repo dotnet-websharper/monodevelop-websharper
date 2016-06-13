@@ -41,37 +41,19 @@
     <EmbeddedResource Include="MonoDevelop.WebSharper.addin.xml">
       <LogicalName>MonoDevelop.WebSharper.addin.xml</LogicalName>
     </EmbeddedResource>
-    <EmbeddedResource Include="WebSharperBundleWebsiteProject.xpt.xml">
-      <LogicalName>WebSharperBundleWebsiteProject.xpt.xml</LogicalName>
+    <EmbeddedResource Include="WebSharperCSharpSiteletsUINextProject.xpt.xml">
+      <LogicalName>WebSharperCSharpSiteletsUINextProject.xpt.xml</LogicalName>
     </EmbeddedResource>
-    <EmbeddedResource Include="WebSharperBundleUINextProject.xpt.xml">
-      <LogicalName>WebSharperBundleUINextProject.xpt.xml</LogicalName>
+    <EmbeddedResource Include="WebSharperCSharpBundleWebsiteProject.xpt.xml">
+      <LogicalName>WebSharperCSharpBundleWebsiteProject.xpt.xml</LogicalName>
     </EmbeddedResource>
-    <EmbeddedResource Include="WebSharperExtensionProject.xpt.xml">
-      <LogicalName>WebSharperExtensionProject.xpt.xml</LogicalName>
+    <EmbeddedResource Include="WebSharperCSharpBundleUINextProject.xpt.xml">
+      <LogicalName>WebSharperCSharpBundleUINextProject.xpt.xml</LogicalName>
     </EmbeddedResource>
-    <EmbeddedResource Include="WebSharperLibraryProject.xpt.xml">
-      <LogicalName>WebSharperLibraryProject.xpt.xml</LogicalName>
+    <EmbeddedResource Include="WebSharperCSharpLibraryProject.xpt.xml">
+      <LogicalName>WebSharperCSharpLibraryProject.xpt.xml</LogicalName>
     </EmbeddedResource>
-    <EmbeddedResource Include="WebSharperOwinSelfHostProject.xpt.xml">
-      <LogicalName>WebSharperOwinSelfHostProject.xpt.xml</LogicalName>
-    </EmbeddedResource>
-    <EmbeddedResource Include="WebSharperSiteletsHostProject.xpt.xml">
-      <LogicalName>WebSharperSiteletsHostProject.xpt.xml</LogicalName>
-    </EmbeddedResource>
-    <EmbeddedResource Include="WebSharperSiteletsHtmlProject.xpt.xml">
-      <LogicalName>WebSharperSiteletsHtmlProject.xpt.xml</LogicalName>
-    </EmbeddedResource>
-    <EmbeddedResource Include="WebSharperSiteletsWebsiteProject.xpt.xml">
-      <LogicalName>WebSharperSiteletsWebsiteProject.xpt.xml</LogicalName>
-    </EmbeddedResource>
-    <EmbeddedResource Include="WebSharperSiteletsUINextProject.xpt.xml">
-      <LogicalName>WebSharperSiteletsUINextProject.xpt.xml</LogicalName>
-    </EmbeddedResource>
-    <EmbeddedResource Include="WebSharperSiteletsUINextSuaveProject.xpt.xml">
-      <LogicalName>WebSharperSiteletsUINextSuaveProject.xpt.xml</LogicalName>
-    </EmbeddedResource>
-    <EmbeddedResource Include="..\packages\WebSharper.Templates\WebSharper.Templates.nupkg">
+    <EmbeddedResource Include="..\packages\Zafir.Templates\Zafir.Templates.nupkg">
       <LogicalName>WebSharper.Templates.nupkg</LogicalName>
       <Link>WebSharper.Templates.nupkg</Link>
     </EmbeddedResource>
@@ -96,7 +78,7 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="WebSharper.Templates">
-      <HintPath>..\packages\WebSharper.Templates\lib\net40\WebSharper.Templates.dll</HintPath>
+      <HintPath>..\packages\Zafir.Templates\lib\net40\WebSharper.Templates.dll</HintPath>
     </Reference>
     <Reference Include="MonoDevelop.Core">
       <HintPath>..\libs\MonoDevelop.Core.dll</HintPath>

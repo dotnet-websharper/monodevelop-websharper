@@ -19,7 +19,6 @@ $(PKG): $(DLL)
 	$(MDTOOL) --help # must be run at least once before doing `mdtool setup ...` \
 	                 # (seemingly an mdtool bug)
 	$(MDTOOL) setup pack $(DLL)
-	mv *.mpack repository/
 
 $(DLL): $(NAME) restore
 	sed s/PACKAGEVERSION/$(VER)/g $(ADDIN_XML).template > $(ADDIN_XML)
